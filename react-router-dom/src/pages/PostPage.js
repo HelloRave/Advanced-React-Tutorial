@@ -14,7 +14,6 @@ export default function PostPage(props) {
                 const response = await axios.get('https://jsonplaceholder.typicode.com/posts/' + postId)
                 setPost(response.data)
             }
-
         }
 
         fetchPost(activePostId)
